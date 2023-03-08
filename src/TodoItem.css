@@ -1,0 +1,57 @@
+li{
+    display: flex;
+    bottom: 100%;
+    justify-content: space-between;
+    margin: 0px 5vh 3vh 0;
+    border: 1px solid #d1d1d1;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgb(252, 237, 221);
+}
+
+.Icon-check{
+    height: 16px;
+    padding: 2px;
+    border: 1px solid #4d4b4b;
+    border-radius: 50%;
+    margin: 5px 15px 0 10px;
+    transform: rotate(180deg);
+}
+
+.Icon-check:hover{
+    cursor: pointer;
+    color: rgb(5, 151, 25);
+}
+
+.Icon-check--active{
+    color: rgb(5, 151, 25);
+    background-color: rgb(194, 255, 194);
+}
+
+.Icon-delete{
+    height: 16px;
+    width: 2vh;
+    padding: 2px;
+    border-radius: 50%;
+    margin: 5px 15px 0px 0px;
+    text-align: center;
+    font-size: medium;
+}
+
+p{
+    padding: 8px;
+    font-size: large;
+    word-break: break-word;
+}
+
+.TodoItem-p--complete{
+    text-decoration: line-through;
+    display: block;
+}
+
+
+span:hover{
+    cursor: pointer;
+    color: #c05252;
+}
+

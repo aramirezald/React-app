@@ -1,0 +1,108 @@
+.container-todo {
+    margin: 35px 70px;
+    display: grid;
+    grid-template-columns: auto;
+    height: 85vh;
+    width: calc(36% - 10px);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 5px rgb(198, 198, 198);
+}
+
+.title {
+    font-size: 24px;
+    font-family: 'Shantell Sans', cursive;
+    margin-top: 9vh;
+    margin-left: 4vh;
+    margin-bottom: 0;
+}
+
+.newTodoForm{
+    background-color: transparent;
+    padding: 0;
+    margin-top: -11vh;
+    width: 35%;
+    
+}
+
+.subtitle{
+    font-family: 'Shantell Sans', cursive;
+    font-weight: lighter;
+    margin-left: 4.3vh;
+    margin-bottom:0;
+    height: 1px;
+}
+
+.list-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    background-color: transparent;
+}
+img {
+    height: 35vh;
+}
+
+span {
+    margin: 20px;
+}
+
+.add {
+    background-color: #4CAF50;
+    /* Fondo verde */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Texto en blanco */
+    padding: 10px 20px;
+    /* Espacio interno */
+    text-align: center;
+    /* Alineación de texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Bloque de elemento en línea */
+    font-family: 'Shantell Sans', cursive;
+    font-size: 16px;
+    /* Tamaño de fuente */
+    /* Espacio exterior */
+    cursor: pointer;
+    /* Cursor de puntero */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    transition: background-color 0.3s ease;
+    /* Transición de color de fondo */
+    margin: -2vh 0vh 0vh 4vh;
+    width: 23vh;
+    height: 5vh;
+}
+
+.add:hover {
+    background-color: #3e8e41;
+    /* Cambio de color de fondo al pasar el mouse */
+}
+
+@media (max-width:940px){
+    .container-todo{
+        width: 100%;
+        display:initial;
+        margin: 35px 20px;
+    }
+    .add{
+        margin-top:0 ;
+        display: none;
+    }
+    .subtitle{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+
+    .list-img{
+        display: none;
+    }
+}

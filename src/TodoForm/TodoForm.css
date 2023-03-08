@@ -1,0 +1,70 @@
+form{
+    display: grid;
+    height: 25vh;
+    width: 35vh;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 35vh;
+}
+
+label{
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+}
+
+textarea{
+    height: 10vh;
+    width: 27vh;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    margin-left: 30px;
+    resize: none;
+    border-color: #61DAFA;
+    color: #1E1E1F;
+
+}
+textarea:focus{
+    outline-color: #61DAFA;
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-top: 8px;
+    width: 90%;
+
+}
+.cancelButton{
+    font-family: 'Shantell Sans', cursive;
+    font-size: medium;
+    background-color: white;
+    border: none;
+    margin-left: 25px;
+    height: 6vh;
+    width: 10vh;
+
+}
+.cancelButton:hover{
+    background-color: rgb(224, 85, 85);
+}
+
+.submitButton{
+    font-family: 'Shantell Sans', cursive;
+    font-size: medium;
+    background-color: white;
+    border: none;
+    width: 10vh;
+    height: 6vh;
+}
+.submitButton:hover{
+    background-color: #61DAFA;
+}

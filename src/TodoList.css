@@ -1,0 +1,122 @@
+.container-list {
+    margin: 35px 70px;
+    display: grid;
+    grid-template-columns: auto;
+    height: 85vh;
+    width: calc(36% - 50px);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 5px rgb(198, 198, 198);
+}
+
+.container-search {
+    display: grid;
+    height: 30vh;
+}
+
+.container-search h1 {
+    margin-top: 8vh;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.container-search h4 {
+    margin-top: 0;
+    margin-bottom: 4vh;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: lighter;
+}
+
+.search-task {
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 5px 5px 20px;
+    margin-left: 4vh;
+    font-family: 'Shantell Sans', cursive;
+    outline: none;
+    height: 5vh;
+    width: 80%;
+}
+
+.search-task:hover {
+    border: 0px solid rgb(241, 241, 241);
+    contain: none;
+    cursor: text;
+    outline: none;
+}
+
+.container-tasks {
+    display: block;
+    height: 40vh;
+    width: 92%;
+    list-style: none;
+    overflow:auto;
+}
+
+.container-tasks::-webkit-scrollbar-track {
+    background-color: #d30707; /* Color del track */
+  }
+  
+.container-tasks::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 5px; /* Radio de los bordes del thumb */
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del thumb cuando se le hace hover */
+  }
+
+.container-tasks ::-webkit-scrollbar-thumb{
+    background-color: bisque;
+    color: aqua;
+
+}
+
+@media (max-width:940px) {
+    h1 {
+        display: none;
+    }
+    .container-tasks{
+        width: 90%;
+        height: 45vh;
+        overflow: auto;
+    }
+
+    .container-list {
+        background-color: transparent;
+        box-shadow: none;
+        position: absolute;
+        padding: auto;
+        display: initial;
+        width: 95%;
+        margin: 35px 0px;
+    }
+
+    .container-search {
+        display: grid;
+    }
+
+    .container-search h4 {
+        margin: 10vh 5vh 5vh ;
+        text-align: center;
+        font-family: 'Shantell Sans', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0vh;
+    }
+
+    .search-task {
+        display: none;
+    }
+
+    .search-task:hover {
+        border: 0px solid rgb(241, 241, 241);
+        contain: none;
+        cursor: text;
+        outline: none;
+    }
+}

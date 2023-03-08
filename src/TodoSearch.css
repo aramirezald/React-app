@@ -1,0 +1,32 @@
+.search-content{
+    margin: -11vh 0vh 0vh calc(14% - 19vh);
+    position: absolute;
+    width: calc(50% - 30%);
+    height: 6vh;
+}
+.search{
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 5px 5px 20px;
+    font-family: 'Shantell Sans', cursive;
+    outline: none;
+    height: 5vh;
+    width: 100%;
+}
+
+.search:hover{
+    border: 0px solid rgb(241, 241, 241);
+    contain: none;
+    cursor: text;
+    outline: none;
+}
+
+@media (max-width:940px) {
+
+    .search-content{
+        width: 74%;
+        margin-left: 10px;
+    }
+
+}
