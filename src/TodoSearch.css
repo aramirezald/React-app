@@ -1,8 +1,12 @@
 .search-content{
-    margin: -11vh 0vh 0vh calc(14% - 19vh);
+
+    margin-right: 0;
     position: absolute;
-    width: calc(50% - 30%);
-    height: 6vh;
+    width: 20%;
+    height: 10vh;
+    right: auto;
+    left: auto;
+    top: 32vh;
 }
 .search{
     background-color: rgb(241, 241, 241);

@@ -21,12 +21,16 @@ function ErrorTodo(){
 
 function InicioTodo(){
     return(
-        <div class="loader">
-        <p>Crea el primer TODOO :D</p>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
+
+          <div className="rect-one">
+            <p className="circle"></p>
+            <input className="input-1" readOnly></input>
+            <input className="input-2" readOnly></input>
+            <input className="input-3" readOnly></input>
+            <input className="input-4" readOnly></input>
+          </div>
+
+  
     )
 }
 
