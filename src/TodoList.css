@@ -1,9 +1,9 @@
 .container-list {
     margin: 35px 70px;
     display: grid;
-    grid-template-columns: auto;
+    justify-content: center;
     height: 85vh;
-    width: calc(36% - 50px);
+    width: calc(40% - 50px);
     background-color: white;
     border-radius: 15px;
     box-shadow: 1px 1px 5px 5px rgb(198, 198, 198);
@@ -18,7 +18,7 @@
     margin-top: 8vh;
     text-align: center;
     font-family: 'Shantell Sans', cursive;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -31,29 +31,12 @@
     font-weight: lighter;
 }
 
-.search-task {
-    background-color: rgb(241, 241, 241);
-    border: 0;
-    border-radius: 10px;
-    padding: 5px 5px 5px 20px;
-    margin-left: 4vh;
-    font-family: 'Shantell Sans', cursive;
-    outline: none;
-    height: 5vh;
-    width: 80%;
-}
-
-.search-task:hover {
-    border: 0px solid rgb(241, 241, 241);
-    contain: none;
-    cursor: text;
-    outline: none;
-}
-
 .container-tasks {
     display: block;
     height: 40vh;
-    width: 92%;
+    margin-left: 0px;
+    width: 100%;
+    padding: 0;
     list-style: none;
     overflow:auto;
 }
@@ -82,6 +65,7 @@
     }
     .container-tasks{
         width: 90%;
+        margin-left: auto;
         height: 45vh;
         overflow: auto;
     }

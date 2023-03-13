@@ -20,10 +20,11 @@ function TodoForm(props) {
     const onSubmit = (event) => {
         event.preventDefault();
         addTodo(newTodoValue)
+        props.setOpenModal(false)
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="form-Modal">
             <label>Add a new task</label>
             <textarea
             required

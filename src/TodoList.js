@@ -10,7 +10,7 @@ function TodoList(props) {
         <section className="container-list">
             {props.children.TodoSearch}
             <section className="container-search">
-                <h1>Your tasks</h1>
+                <h1>List of your tasks</h1>
                 <h4>
                      {completedTodos} of {totalTodos} tasks completed</h4>
             </section>

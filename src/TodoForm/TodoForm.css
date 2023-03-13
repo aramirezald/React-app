@@ -1,10 +1,11 @@
-form{
+.form-Modal{
     display: grid;
-    height: 25vh;
-    width: 35vh;
-    padding: 10px;
+    height: 30%;
+    width: auto;
+    padding: 10px 5% 0px 5%;
     background-color: white;
     position: absolute;
+    justify-content: center;
     top: 35vh;
 }
 
@@ -13,19 +14,18 @@ label{
     font-family: 'Shantell Sans', cursive;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 15px;
     font-weight: bold;
     
 }
 
 textarea{
     height: 10vh;
-    width: 27vh;
+    width: 80%;
+    margin-left: 5%;
     padding: 10px;
     font-size: 15px;
     text-align: center;
     font-family: 'Shantell Sans', cursive;
-    margin-left: 30px;
     resize: none;
     border-color: #61DAFA;
     color: #1E1E1F;
@@ -38,9 +38,8 @@ textarea:focus{
 .buttons{
     display: flex;
     justify-content: space-between;
-    margin-left: 5px;
     margin-top: 8px;
-    width: 90%;
+    width: 100%;
 
 }
 .cancelButton{
@@ -48,9 +47,11 @@ textarea:focus{
     font-size: medium;
     background-color: white;
     border: none;
-    margin-left: 25px;
-    height: 6vh;
-    width: 10vh;
+    height: 100%;
+    margin-left: 5%;
+    padding: 2px 12px 2px 12px;
+    margin-top: -5%;
+    width: auto;
 
 }
 .cancelButton:hover{
@@ -62,9 +63,20 @@ textarea:focus{
     font-size: medium;
     background-color: white;
     border: none;
-    width: 10vh;
-    height: 6vh;
+    width: 40%;
+    height: 100%;
+    margin-top: -5%;
+    margin-right: 6%;
 }
 .submitButton:hover{
     background-color: #61DAFA;
+}
+
+@media (min-width:940px) {
+    .form-Modal{
+        display: none;
+    }
+    .modal-section{
+        display: none;
+    }
 }
