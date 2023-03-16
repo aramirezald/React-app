@@ -5,8 +5,9 @@
 
 @media (max-width:940px){
  .container{
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 23em;
+    height: 50em;
  }   
 }

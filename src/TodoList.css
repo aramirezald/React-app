@@ -1,31 +1,31 @@
 .container-list {
-    margin: 35px 70px;
+    margin: 1em 4em;
     display: grid;
     justify-content: center;
-    height: 85vh;
-    width: calc(40% - 50px);
+    width: 39em;
+    height: 33em;
     background-color: white;
     border-radius: 15px;
     box-shadow: 1px 1px 5px 5px rgb(198, 198, 198);
+    padding: 15px;
 }
 
 .container-search {
     display: grid;
-    height: 30vh;
+    height: 11em;
 }
 
 .container-search h1 {
-    margin-top: 8vh;
+    margin-top: 1.2em;
     text-align: center;
     font-family: 'Shantell Sans', cursive;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
-    margin-bottom: 0;
 }
 
 .container-search h4 {
-    margin-top: 0;
-    margin-bottom: 4vh;
+    margin-top: 0em;
+    margin-bottom: 0em;
     text-align: center;
     font-family: 'Shantell Sans', cursive;
     font-weight: lighter;
@@ -33,9 +33,10 @@
 
 .container-tasks {
     display: block;
-    height: 40vh;
-    margin-left: 0px;
-    width: 100%;
+    height: 17em;
+    margin-left: 2em;
+    margin-top: 4.5em;
+    width: 22em;
     padding: 0;
     list-style: none;
     overflow:auto;
@@ -63,10 +64,11 @@
     h1 {
         display: none;
     }
+
     .container-tasks{
-        width: 90%;
-        margin-left: auto;
-        height: 45vh;
+        width: 17em;
+        margin-left: 0em;
+        height: 21em;
         overflow: auto;
     }
 
@@ -74,10 +76,10 @@
         background-color: transparent;
         box-shadow: none;
         position: absolute;
-        padding: auto;
         display: initial;
-        width: 95%;
-        margin: 35px 0px;
+        width: 20em;
+        height: 44em;
+        margin: 0em;
     }
 
     .container-search {
@@ -85,16 +87,20 @@
     }
 
     .container-search h4 {
-        margin: 10vh 5vh 5vh ;
+        margin: 3em 1em 1em 1em;
         text-align: center;
+        width: 12em;
         font-family: 'Shantell Sans', cursive;
-        font-size: 20px;
+        font-size: 23px;
         font-weight: bold;
-        margin-bottom: 0vh;
     }
 
     .search-task {
         display: none;
+    }
+    .container-tasks{
+        margin-left: 0;
+        width: 19em;
     }
 
     .search-task:hover {
@@ -102,5 +108,24 @@
         contain: none;
         cursor: text;
         outline: none;
+    }
+}
+
+/*Media query width 1400px*/
+
+@media (min-width:1400px){
+    .container-list{
+        height: 53em;
+    }
+    .container-search h1{
+        font-size: 45px;
+        margin-top: 1.8em;
+    }
+    .container-search h4{
+        font-size: 20px;
+    }
+    .container-tasks{
+        width: 30em;
+        height: 20em;
     }
 }

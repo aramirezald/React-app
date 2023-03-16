@@ -1,7 +1,8 @@
 li{
     display: flex;
+    width: 20em;
+    margin-top:1.5em;
     justify-content: space-between;
-    margin: 0px 5vh 3vh 0;
     border: 1px solid #d1d1d1;
     border-radius: 20px;
     background-color: rgb(252, 237, 221);
@@ -53,3 +54,16 @@ span:hover{
     color: #c05252;
 }
 
+@media (min-width:1400px){
+
+    li{
+        width: 25em;
+    }
+}
+
+@media (max-width:940px){
+    li{
+        width: 16em;
+        margin-left: 2em;
+    }
+}

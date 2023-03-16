@@ -1,32 +1,34 @@
 .container-todo {
-    margin: 35px 70px;
+    margin: 1em 4em;
     display: grid;
     grid-template-columns: auto;
-    height: 85vh;
-    width: calc(36% - 10px);
+    width: 39em;
+    height: 33em;
     background-color: white;
     border-radius: 15px;
+    padding: 15px;
+
     box-shadow: 1px 1px 5px 5px rgb(198, 198, 198);
 }
 
 .title {
-    font-size: 24px;
+    font-size: 2em;
     font-family: 'Shantell Sans', cursive;
-    margin-top: 9vh;
-    margin-left: 4vh;
+    margin-top: 1.5em;
+    margin-left: 1em;
 }
 
 .search-task {
     background-color: rgb(241, 241, 241);
     border: 0;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     padding: 5px 5px 5px 20px;
-    margin-left: 4vh;
+    margin-left: 2em;
     font-family: 'Shantell Sans', cursive;
     outline: none;
-    height: 35%;
-    width: 200%;
+    height: 3em;
+    width: 22em;
 }
 
 .search-task:hover {
@@ -40,30 +42,28 @@
     background-color: transparent;
     padding: 0;
     margin-top: 0vh;
-    width: 35%;
+    width: 12em;
     
 }
 
 .subtitle{
     font-family: 'Shantell Sans', cursive;
     font-weight: lighter;
-    margin-left: 4.3vh;
-    width: 100%;
-    margin-bottom:25px;
+    margin-left: 1.8em;
+    margin-bottom:1.5em;
     height: 0px;
 }
 
 .list-img{
     display: block;
     justify-content: center;
-    margin-top: 10%;
-    margin-left: 20%;
-    height: 33vh;
+    margin-top: 2em;
+    margin-left: 6em;
     background-color: transparent;
 }
 img {
-    height: 90%;
-    width: 70%;
+    height: 13em;
+    width: 13em;
 }
 
 span {
@@ -97,8 +97,8 @@ span {
     /* Sombra */
     transition: background-color 0.3s ease;
     /* Transición de color de fondo */
-    margin: 0vh 0vh 0vh 4vh;
-    width: 120%;
+    margin: 0vh 0vh 0vh 1.7em;
+    width: 15em;
 
 }
 
@@ -107,11 +107,13 @@ span {
     /* Cambio de color de fondo al pasar el mouse */
 }
 
+
 @media (max-width:940px){
     .container-todo{
-        width: 100%;
+        width: 18em;
         display:initial;
-        margin: 35px 20px;
+        margin: 0em 0em 0em 0em;
+        height: 43em;
     }
     .add{
         margin-top:0 ;
@@ -128,3 +130,34 @@ span {
         display: none;
     }
 }
+
+/*Media query width 1400px*/
+
+@media (min-width:1400px){
+    .container-todo {
+        height: 53rem;
+        display: grid;
+        grid-template-columns: auto;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px 5px rgb(198, 198, 198);
+    }
+    .search-task{
+        width: 30em;
+        height: 4em;
+    }
+    .add{
+        width: 18em;
+    }
+    .title{
+        font-size: 35px;
+        margin-bottom: 1.5em;
+        margin-top: 2.5em;
+    }
+    img{
+        height: 23em;
+        margin-left: 3em;
+        width: 18em;
+    }
+}
+
